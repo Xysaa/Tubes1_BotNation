@@ -2,64 +2,66 @@
 
 # 💎 Etimo Diamonds 2
 
-Diamonds is a programming challenge. Program a bot and compete to get the highest score. For more information:
+Diamonds adalah tantangan pemrograman. Anda diminta untuk membuat sebuah bot dan berkompetisi untuk mendapatkan skor tertinggi.
 
--   [Project Specification](https://docs.google.com/document/d/13cbmMVXviyu8eKQ6heqgDzt4JNNMeAZO/edit)
--   [Get Started with Diamonds](https://docs.google.com/document/d/1L92Axb89yIkom0b24D350Z1QAr8rujvHof7-kXRAp7c/edit)
+- [Spesifikasi Proyek](https://docs.google.com/document/d/13cbmMVXviyu8eKQ6heqgDzt4JNNMeAZO/edit)  
+- [Panduan Memulai Diamonds](https://docs.google.com/document/d/1L92Axb89yIkom0b24D350Z1QAr8rujvHof7-kXRAp7c/edit)
 
-## Installing Dependencies 🔨
+---
 
-1. Clone this repository and move to the root of this project's directory
+## i. Penjelasan Singkat Algoritma Greedy yang Diimplementasikan
 
-    ```
+Bot ini menggunakan algoritma **Greedy** dengan pendekatan memilih diamond yang berada dalam radius terdekat dengan base dengan memprioritaskan diamonds dengan nilai tertinggi dan mempertimbangkan penggunaan teleporter untuk memaksimalkan perolehan skor secara keseluruhan. Bot mengevaluasi posisi berlian terdekat dan menghitung nilai tertinggi yang bisa didapatkan dalam langkah minimum, lalu bergerak ke arah tersebut.
+
+---
+
+## ii. Requirement Program dan Instalasi
+
+### Requirement
+- Python 3.8 atau lebih baru
+- `pip` package manager
+
+### Instalasi
+
+1. Clone repository dan masuk ke direktori proyek:
+    ```bash
     git clone https://github.com/haziqam/tubes1-IF2110-bot-starter-pack.git
     cd ./tubes1-IF2110-bot-starter-pack
     ```
 
-2. Install dependencies
-
-    ```
+2. Install dependencies:
+    ```bash
     pip install -r requirements.txt
     ```
 
-## How to Run 💻
+---
 
-1. To run one bot
+## iii. Cara Menjalankan Program
 
-    ```
-    python main.py --logic Random --email=your_email@example.com --name=your_name --password=your_password --team etimo
-    ```
+### Menjalankan 1 Bot:
+```bash
+python main.py --logic Random --email=your_email@example.com --name=your_name --password=your_password --team etimo
+```
 
-2. To run multiple bots simultaneously
+### Menjalankan Beberapa Bot Sekaligus:
 
-    For Windows
+#### Untuk Windows:
+```bash
+./run-bots.bat
+```
 
-    ```
-    ./run-bots.bat
-    ```
+#### Untuk Linux / macOS:
+```bash
+chmod +x run-bots.sh
+./run-bots.sh
+```
 
-    For Linux / (possibly) macOS
+> ⚠️ Pastikan setiap bot memiliki **email** dan **name** yang unik. Email hanya perlu sesuai format, name dan password bebas tanpa spasi.
 
-    ```
-    ./run-bots.sh
-    ```
+---
 
-    <b>Before executing the script, make sure to change the permission of the shell script to enable executing the script (for linux/macOS)</b>
+## iv. Author (Identitas Pembuat)
 
-    ```
-    chmod +x run-bots.sh
-    ```
-
-#### Note:
-
--   If you run multiple bots, make sure each emails and names are unique
--   The email could be anything as long as it follows a correct email syntax
--   The name, and password could be anything without any space
-
-## Credits 🪙
-
-This repository is adapted from https://github.com/Etimo/diamonds2
-
-Some code in this repository is adjusted to fix some issues in the original repository and to adapt to the requirements of Algorithm Strategies course (IF2211), Informatics Undergraduate Program, ITB.
-
-©️ All rights and credits reserved to [Etimo](https://github.com/Etimo)
+- Annisa Al-Qoriah – 123140030  
+- Muhammad Romadhon Santoso – 123140031  
+- Stevanus Cahya Anggara – 123140038  
